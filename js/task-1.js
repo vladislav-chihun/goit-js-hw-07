@@ -1,17 +1,23 @@
 const categoriesList = document.querySelector("#categories");
 const categories = categoriesList.querySelectorAll("li.item");
 const elementQuantity = categories.length;
-const totalTitle = [];
-const totalList = [];
-for (let i = 0; i > elementQuantity; i++){
-    const title = categories.querySelectorAll("h2").textContent
-    const list = categories.querySelectorAll("ul > li").length
-    console.log(title)
-    console.log(list)
-}
 
 
 
-console.log(` Number of categories: ${elementQuantity}`)
+
+console.log(`Number of categories: ${elementQuantity}`)
+
+
+
+
+categories.forEach(category => {
+    const title = category.querySelector("h2").textContent;
+    const list = category.querySelectorAll("ul > li")
+    console.log(`Category: ${title}`);
+    console.log(`Elements: ${list.length}`);
+}) 
+
+
+
 
 
