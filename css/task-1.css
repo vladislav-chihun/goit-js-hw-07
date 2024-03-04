@@ -5,12 +5,34 @@
   justify-content: center;
   flex-direction: column;
   padding-left: 16px;
+  width: 392px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
 }
 .item > ul > li {
   list-style-type: none;
-  border: 10px;
+  border: 1px;
   border-color: rgba(128, 128, 128, 1);
   border-radius: 8px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  width: 360px;
+  font-weight: 400;
+  letter-spacing: 4%;
+  line-height: 24px;
+  color: rgba(46, 47, 66, 1);
+  height: 40px;
+}
+.item > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 16px;
 }
 #categories {
   text-decoration: none;
@@ -18,4 +40,12 @@
   height: 264px;
   display: flex;
   flex-direction: column;
+  gap: 24px;
+  border-radius: 8px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(46, 47, 66, 1);
 }
