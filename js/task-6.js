@@ -10,12 +10,15 @@ const createButton = document.querySelector("[data-create]");
 const destroyButton = document.querySelector("[data-destroy]");
 
 
-createButton.addEventListener("click", function() {
+createButton.addEventListener("click", function () {
+  if (divBox.querySelector("div")) {
+    divBox.innerHTML = ""
+  }
   createBoxes(input.value);
 });
 
 function createBoxes(amount) {
-  if (amount >= 1 && amount <= 100 && divBox.querySelector("newElem")) {
+  if (amount >= 1 && amount <= 100 && !divBox.querySelector("div")) {
     for (let i = 0; i < amount; i++){
       const randomColor = getRandomHexColor();
       const newElem = document.createElement("div");
@@ -25,7 +28,7 @@ function createBoxes(amount) {
       newElem.style.backgroundColor = randomColor;
       divBox.append(newElem);
   }
-  }
+  } 
   
   input.value = ""
 }
