@@ -1,0 +1,20 @@
+.change-color {
+  background-color: rgba(78, 117, 255, 1);
+  width: 148px;
+  height: 40px;
+  font-family: Montserrat, sans-serif;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  border-style: none;
+  letter-spacing: 4;
+  color: rgba(255, 255, 255, 1);
+}
+p {
+  font-weight: 400;
+  size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
