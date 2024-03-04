@@ -1,0 +1,21 @@
+.item {
+  background-color: rgba(246, 246, 254, 1);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 16px;
+}
+.item > ul > li {
+  list-style-type: none;
+  border: 10px;
+  border-color: rgba(128, 128, 128, 1);
+  border-radius: 8px;
+}
+#categories {
+  text-decoration: none;
+  width: 392px;
+  height: 264px;
+  display: flex;
+  flex-direction: column;
+}
