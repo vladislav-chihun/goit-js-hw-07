@@ -56,4 +56,3 @@ for (let i = 0; i < images.length; i++) {
 
 
 
-console.log(list)
