@@ -5,6 +5,8 @@ function textFunction(event) {
     if (inputField.value.trim() !="") {
         textToChange.textContent= event.currentTarget.value
     console.log(textToChange)
+    } else {
+        textToChange.textContent= "Anonymous"
     }
     
 }

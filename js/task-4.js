@@ -7,8 +7,11 @@ function formFunction(event) {
         alert('All form fields must be filled in');
 
     } else {
-        console.log(event.currentTarget.elements.email.value.trim());
-        console.log(event.currentTarget.elements.password.value.trim());
+        const formData = {
+            email: event.currentTarget.elements.email.value.trim(),
+            password: event.currentTarget.elements.password.value.trim()
+        };
+        console.log(formData)
     }
     event.currentTarget.reset();
 
