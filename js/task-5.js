@@ -11,5 +11,6 @@ button.addEventListener("click", colorChange)
 function colorChange() {
   let randomColor = getRandomHexColor();
   backgroundColor.style.backgroundColor = `${randomColor}`
+  textColor.textContent = `${randomColor}`
   textColor.style.color = `${randomColor}`
 }
